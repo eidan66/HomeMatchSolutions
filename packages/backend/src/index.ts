@@ -1,8 +1,11 @@
 import express from 'express';
 import mongoose from 'mongoose';
+import cors from 'cors';
+
 import projectsRouter from './routes/projects';
 
 const app = express();
+app.use(cors())
 const PORT = process.env.PORT || 3000;
 
 const MONGO_URL = process.env.MONGO_URL || 'mongodb://127.0.0.1:27017/homematch';
