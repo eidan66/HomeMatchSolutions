@@ -1,0 +1,17 @@
+{
+    "name": "@homematch/common",
+    "version": "0.1.0",
+    "private": true,
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+      "build": "tsc -b",
+      "lint": "eslint \"src/**/*.{ts,tsx}\""
+    },
+    "devDependencies": {
+      "typescript": "^5.8.3",
+      "@typescript-eslint/parser": "^8.35.1",
+      "@typescript-eslint/eslint-plugin": "^8.35.1",
+      "eslint": "^9.30.1"
+    }
+  }

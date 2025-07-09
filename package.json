@@ -1,0 +1,25 @@
+{
+  "name": "homematch-solutions",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "<eidan47@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "concurrently \"yarn workspace @homematch/backend dev\" \"yarn workspace @homematch/frontend dev\"",
+    "build": "yarn workspaces run build",
+    "lint": "yarn workspaces run lint",
+    "test": "yarn workspaces run test"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.0",
+    "typescript": "^5.8.3",
+    "eslint": "^9.30.1",
+    "prettier": "^2.8.0",
+    "@typescript-eslint/parser": "^8.35.1",
+    "@typescript-eslint/eslint-plugin": "^8.35.1"
+  }
+}
